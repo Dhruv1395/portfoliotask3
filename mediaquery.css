@@ -1,3 +1,4 @@
+
 /* / Desktop 1600px   / */
 @media (max-width: 1850px) {}
 
@@ -33,11 +34,12 @@
     #layout .over img{
         left: -30px;
     }
-    #menu{
+    
+    #sidenav{
         display: block;
-    }
-    #sidebar{
-        display: block;
+        display: flex;
+  align-items: center;
+  justify-content: space-between;
     }
 }
 

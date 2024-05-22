@@ -1,7 +1,11 @@
+
 *{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+}
+body{
+    /* overflow-x: hidden; */
 }
 nav{
     position: relative;
@@ -11,9 +15,7 @@ nav .logo{
    align-items: center;
    justify-content: center;
     margin: 0 10%;
-    height: 60px;
-    width: 60px;
-    background-color: #ee4b10fe;
+   
     position: absolute;
     bottom: -30px;
 }
@@ -38,7 +40,47 @@ li .nav-link{
     background-position: center;
     color: white;
     font-weight: bold;
+    position: relative;
+    overflow-x: hidden;
     
+}
+#menu{
+    float: right;
+    margin: 5%;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+#sidebar{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.217);
+    position: absolute;
+    top: 0;
+    right:-50%;
+    backdrop-filter: blur(10px);
+    display:none;
+}
+#sidebar .items{
+    margin: 40% 20%;
+}
+
+#sidebar .items h4
+{
+    padding: 10% 0;
+}
+#sidebar .items h4 a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+#sidebar i{
+    position: absolute;
+    top:2%;
+    right: 10%;
+    font-size: 30px;
 }
 .icon{
     padding:10% 0 5% 0;
@@ -110,14 +152,18 @@ li .nav-link{
     padding-bottom: 100px;
     background-color: #12141c;
     padding-bottom: 100px;
-   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow-x: hidden;
 }
 #showcase h1{
     color: white;
-    font-size: 10rem;
+    font-size: 100px;
     text-transform: capitalize;
     font-family: sans-serif;
     padding-top: 50px;
+    
 }
 #showcase .img{
     display: flex;

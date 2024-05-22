@@ -14,7 +14,32 @@
 @media (max-width: 991px) {}
 
 /* / Iphone 767px  / */
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+    nav{
+        display: none;
+    }
+    #home .icon{
+        padding-top: 50%;
+    }
+    #showcase h1{
+        font-size: 70px;
+    }
+    #explore img{
+        margin:0 0 4% 0;
+    }
+    #home h2{
+        width: 50%;
+    }
+    #layout .over img{
+        left: -30px;
+    }
+    #menu{
+        display: block;
+    }
+    #sidebar{
+        display: block;
+    }
+}
 
 /* / Iphone 567px   / */
 @media (max-width: 567px) {}

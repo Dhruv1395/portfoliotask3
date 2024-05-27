@@ -27,3 +27,26 @@ btn.addEventListener("click",function(){
 cross.addEventListener("click",function(){
     tl.reverse();
 })
+gsap.from("#services .shadow",{
+    opacity:0,
+    x:-300,
+    stagger:0.3,
+    duration:0.5,
+    scrollTrigger:{
+        trigger:"#services",
+        scroller:"body",
+        markers:"true",
+        end:"bottom 90%",
+        scrub:2
+    }
+})
+gsap.from("#layout .content2 .over img",{
+    y:40,
+    scrollTrigger:{
+        trigger:"#layout .over img",
+        scroller:"body",
+        markers:true,
+        scrub:2
+
+    }
+})

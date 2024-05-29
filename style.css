@@ -32,8 +32,10 @@ li .nav-link {
   font-weight: bold;
 }
 header {
-  position: sticky;
-  top: 0;
+  position:fixed;
+  width: 100%;
+  z-index: 1;
+
 }
 #sidenav {
   display: flex;
@@ -41,6 +43,8 @@ header {
   justify-content: space-between;
   background-color: white;
   display: none;
+  position: sticky;
+  top: 0;
 }
 #sidenav i {
   font-size: 30px;
@@ -48,7 +52,6 @@ header {
   
 }
 #side {
-   
   width: 100%;
   background-color:rgba(255, 255, 255, 0.383);
   backdrop-filter: blur(50px);
@@ -56,13 +59,12 @@ header {
   display: flex;
   justify-content: space-around;
   display: none;
-  
-  
 }
 
-#side h4 {
+#side h4 a{
   /* padding: 0 10%; */
   color: white;
+  text-decoration: none;
 }
 #side i {
   font-size: 30px;
@@ -172,7 +174,6 @@ header {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin: 0 200px;
 }
 #showcase .img span {
   color: white;

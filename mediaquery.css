@@ -1,4 +1,3 @@
-
 /* / Desktop 1600px   / */
 @media (max-width: 1850px) {}
 
@@ -16,30 +15,54 @@
 
 /* / Iphone 767px  / */
 @media (max-width: 767px) {
-    nav{
+    nav {
         display: none;
     }
-    #home .icon{
+
+    #home .icon {
         padding-top: 50%;
     }
-    #showcase h1{
+
+    #showcase h1 {
         font-size: 60px;
     }
-    #explore img{
-        margin:0 0 4% 0;
+
+    #explore img {
+        margin: 0 0 4% 0;
     }
-    #home h2{
+
+    #home h2 {
         width: 50%;
     }
-    #layout .over img{
+
+    #layout .over img {
         left: -30px;
     }
-    
-    #sidenav{
+
+    #sidenav {
         display: block;
         display: flex;
-  align-items: center;
-  justify-content: space-between;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #layout .content img {
+        width: 95%;
+    }
+
+    #layout ._card {
+        overflow-x: scroll;
+
+    }
+
+    #layout ._card img {
+        width: 70px;
+    }
+    .end .detail{
+        margin:0 2px;
+    }
+    .end .detail button{
+        width: 50%;
     }
 }
 
